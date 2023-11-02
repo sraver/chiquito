@@ -138,9 +138,12 @@ class Examples:
         # this assertion verifies that no element was found
         assert not found
 
+        # print(list(witness.values())[0])
+
         # yet, the prover returns ok
         super_circuit.halo2_mock_prover(witness)
 
+        # print(list(witness.values())[0])
 
 if __name__ == "__main__":
     x = Examples()
